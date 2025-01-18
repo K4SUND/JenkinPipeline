@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Create Directory') {
             steps {
-                sh 'mkdir -p ./new_directory'
+                bat 'mkdir -p ./new_directory'
                 echo 'Directory created'
             }
         }
