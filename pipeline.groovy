@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Create Directory') {
             steps {
-                bat 'mkdir -p ./new_directory'
+                bat 'mkdir new_directory || echo "Directory already exists"'
                 echo 'Directory created'
             }
         }
